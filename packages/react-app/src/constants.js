@@ -1,5 +1,5 @@
 // MY INFURA_ID, SWAP IN YOURS FROM https://infura.io/dashboard/ethereum
-export const INFURA_ID = "460f40a260564ac4a4f4b3fffb032dad";
+export const INFURA_ID = "42c7c33f3acd4391b31f56cbd9a75e01";
 //dev - 568af3da01a043ecb2ac80bf69927b38
 // prod - 62e4d4d8e861447686db464b423bc591
 //MY ETHERSCAN_ID, SWAP IN YOURS FROM https://etherscan.io/myapikey
@@ -68,7 +68,7 @@ export const NETWORKS = {
         chainId: 5,
         faucet: "https://goerli-faucet.slock.it/",
         blockExplorer: "https://goerli.etherscan.io/",
-        rpcUrl: `https://goerli.infura.io/v3/${INFURA_ID}`,
+        rpcUrl: `https://eth-goerli.g.alchemy.com/v2/bs2R1PRKIRaWVNSoMASsoUuD4sGW4i2n`,
     },
     xdai: {
         name: "xdai",

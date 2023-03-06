@@ -21,7 +21,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "goerli";
 
 function mnemonic() {
   try {
@@ -75,7 +75,7 @@ module.exports = {
       },
     },
     goerli: {
-      url: "https://goerli.infura.io/v3/62e4d4d8e861447686db464b423bc591", //<---- YOUR INFURA ID! (or it won't work)
+      url: "https://eth-goerli.g.alchemy.com/v2/bs2R1PRKIRaWVNSoMASsoUuD4sGW4i2n", //<---- YOUR INFURA ID! (or it won't work)
       accounts: {
         mnemonic: mnemonic(),
       },
@@ -100,7 +100,14 @@ module.exports = {
       accounts: {
         mnemonic: mnemonic(),
       },
-    }
+    },
+    sepolia: {
+      gasPrice:1000000000,
+      url: "https://rpc.sepolia.org",
+    accounts: {
+      mnemonic: mnemonic(),
+    },
+  },
     
   },
   solidity: {
